@@ -15,9 +15,9 @@ const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forRoot(routes,
     {preloadingStrategy:
-      // NoPreloading
-      // PreloadAllModules
-      PreloadserviceService
+      // NoPreloading         ...(This is used to remove the preloading from all feature module)
+      // PreloadAllModules    ...(This is used to apply the preloading to all feature module)
+      PreloadserviceService   //...(This is used to apply the custom preloading to specific feature module)
     } 
     )],
   exports: [RouterModule]  
